@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  padding:0;
+  margin:0;
+  vertical-align:baseline;
+  list-style:none;
+  border:0
+  }
+
+  :root {
+    --body-bg-color:rgb(32, 32, 32) ;
+    --purple: #9257cd;    
+  }
+  body{
+    background-color: var(--body-bg-color);
+    font-family: 'Poppins',sans-serif;
+  }
+  .img-container {
+    text-align: center;
+    height: 222px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .img-container img {
+    height: 210px;
+    width: 210px;
+    border: 2.5px solid var(--purple);
+    padding: 7px;
+    box-sizing: border-box;
+    border-radius: 100px;
+    animation: border-color 5s infinite;
+  }
+   
+  @keyframes border-color{
+    0%{
+      border-color: var(--purple);
+    }
+      25%{
+        border-color:#a346dc;
+      }
+      50%{
+        border-color:#8e29ec ;
+      }
+      75%{
+        border-color: #7712bf;
+      }
+      100%{
+        border-color:var(--purple);
+      }
+
+    }
+ .instagram-name{
+  text-align: center;
+  margin-top: 20px;
+  color: var(--purple)
+ }
+ .links{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+ }
+ .links a {
+  color: var(--purple);
+  text-decoration: none;
+  border: 2px solid var(--purple);
+  border-radius: 5px;
+  width: 326px;
+  line-height: 49px;
+  text-align: center;
+  margin-top: 20px;
+  transition: background-color 0.4s ease-in-out, color .7s ease-in-out;
+ }
+ .links a:hover{
+  background-color: var(--purple);
+  color: var(--body-bg-color);
+ }
+
+.logos {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+  margin-top: 55px;
+  gap: 45px;
+}
+
+.logos img{
+  width: 27px;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.logos img:hover{
+  transform: translateY(-8px);
+}
+
+
